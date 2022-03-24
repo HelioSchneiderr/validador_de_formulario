@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    
+    <section class="conteiner">
+        <h1>Validação de formulário</h1>
+        <p>*Nenhuma campo pode estar vazio.</p>
+        <p>*Usuário pode conter apenas letra e/ou números.</p>
+        <p>*Usuário deve ter entre 3 a 12 caracteres</p>
+        <p>*A senha deve ter entre 6 a 12 caracteres</p>
+
+        <form action="/" id="formu" method="post">
+            <label for="input-teste-1">Nome:</label>
+            <input id="input-teste-1" type="text" name="text">
+            <p id="p-nome" class="error-text"></p>
+
+            <label for="input-teste-2">Sobrenome:</label>
+            <input type="text"  id= "input-teste-2" name="text">
+            <p id="p-sobrenome" class="error-text"></p>
+
+            <label for="input-teste-3">Cpf:</label>
+            <input type="text" id="input-teste-3">
+            <p id="p-cpf" class="error-text"></p>
+
+            <label for="input-teste-4">Usuário:</label>
+            <input type="text" id="input-teste-4">
+            <p id="p-usuario" class="error-text"></p>
+
+            <label for="input-teste-5">Senha:</label>
+            <input type="text" id="input-teste-5">
+            <p id="p-senha" class="error-text"></p>
+
+            <label for="input-teste-6">Confirmar Senha:</label>
+            <input type="text" id="input-teste-6">
+            <p id="p-confirmaSenha" class="error-text"></p>
+
+
+            <button>Enviar</button>
+
+
+        </form>
+
+
+    </section>
+    <script src="../Script/validador.js"></script>
+    <script src="../Script/script.js"></script>
+</body>
+</html>
